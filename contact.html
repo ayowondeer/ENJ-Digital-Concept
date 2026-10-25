@@ -254,7 +254,7 @@
     function updateActiveNavigation() {
       const pageName = location.pathname.split("/").pop().toLowerCase();
       const activePage = pageName === "contact.html" ? "contact"
-        : pageName === "company.html" ? "company" : "home";
+        : pageName === "company.html" ? "company" : "company";
       document.querySelectorAll("[data-nav]").forEach((link) => {
         const isActive = link.dataset.nav === activePage;
         link.classList.toggle("active", isActive);
